@@ -1,8 +1,8 @@
 import { Component, inject, signal, Signal, WritableSignal } from '@angular/core';
 import { Data, RouterOutlet } from '@angular/router';
 import { GridBoxComponent } from './components/grid-box/grid-box.component';
-import { DataService } from './services/data.service';
-import { FilterEnum } from './services/data.types';
+import { DataService } from './components/navigation/services/data.service';
+import { FilterEnum } from './components/navigation/services/data.types';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { CommonModule } from '@angular/common';
 import { ButtonComponent } from './components/button/button.component';

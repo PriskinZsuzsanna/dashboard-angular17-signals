@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Input, Output, WritableSignal, input, signal } from '@angular/core';
 import { CommonModule, NgClass } from '@angular/common';
-import { FilterEnum } from '../../services/data.types';
+import { FilterEnum } from '../navigation/services/data.types';
 
 @Component({
   selector: 'app-button',

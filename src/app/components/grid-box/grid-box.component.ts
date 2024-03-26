@@ -1,5 +1,5 @@
 import { Component, Input, input, signal } from '@angular/core';
-import { FilterEnum, Numbers, Data } from '../../services/data.types';
+import { FilterEnum, Numbers, Data } from '../navigation/services/data.types';
 
 @Component({
   selector: 'app-grid-box',
