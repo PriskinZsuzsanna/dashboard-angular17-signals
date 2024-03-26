@@ -1,0 +1,12 @@
+button {
+  background: none;
+  border: none;
+  color: var(--pale-blue);
+  font-weight: 300;
+  cursor: pointer;
+}
+
+button.active-btn {
+  font-weight: 700;
+  color: #fff;
+}

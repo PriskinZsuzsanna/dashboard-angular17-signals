@@ -1,1 +1,103 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+  --blue: hsl(246, 80%, 60%);
+  --light-red-work: hsl(15, 100%, 70%);
+  --soft-blue-play: hsl(195, 74%, 62%);
+  --light-red-studyed-study: hsl(348, 100%, 68%);
+  --lime-green-exercise: hsl(145, 58%, 55%);
+  --violet-social: hsl(264, 64%, 52%);
+  --soft-orange-self-care: hsl(43, 84%, 65%);
+  --very-dark-blue: hsl(226, 43%, 10%);
+  --dark-blue: hsl(235, 46%, 20%);
+  --dark-blue-hover: hsl(235, 46%, 30%);
+  --desaturated-blue: hsl(235, 45%, 61%);
+  --pale-blue: hsl(236, 100%, 87%);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Rubik', sans-serif;
+}
+
+h2,
+p {
+  font-weight: 300;
+}
+
+app-root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--very-dark-blue);
+  color: var(--pale-blue);
+}
+
+.container {
+  width: min(90%, 900px);
+  padding-block: 40px;
+  display: block;
+  margin-inline: auto;
+}
+
+.grid-item {
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background: var(--dark-blue);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.grid-header-buttons {
+  padding-block: 20px;
+  background: var(--dark-blue);
+  flex: 1;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/*---------------MediaQ---------------*/
+
+@media screen and (min-width: 700px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+
+  .grid-header {
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+  .navigation-header,
+  .grid-header-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin: 0;
+    padding-inline: 10%;
+  }
+
+  .navigation-header-img-div {
+    width: 100%;
+    padding-inline: 0;
+    padding-block: 15px;
+  }
+
+  .grid-header-buttons {
+    flex: 1;
+  }
+
+  button {
+    font-size: 1rem;
+  }
+}

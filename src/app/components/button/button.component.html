@@ -1,0 +1,6 @@
+<button
+  [value]="title"
+  (click)="setFilter($event)" 
+  [ngClass]="active() == title ? 'active-btn' : ''">
+  {{ title | titlecase }}
+</button>

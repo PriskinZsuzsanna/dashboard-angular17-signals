@@ -1,0 +1,19 @@
+<div class="grid-item" [style.background-color]="'var(--' + item.background + ')'">
+  <div class="img-container">
+    <img src="assets/images/icon-{{item.icon}}.svg" class="svg" alt="">
+  </div>
+  <div class="result-box">
+    <div class="title">
+      <h4>{{ item.title }}</h4>
+      <div class="options">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <div class="work-data data-card">
+      <h3>{{ determinMetric(activeTimeframe()!.current) }}</h3>
+      <p>Last week - {{ determinMetric(activeTimeframe()!.previous) }}</p>
+    </div>
+  </div>
+</div>
